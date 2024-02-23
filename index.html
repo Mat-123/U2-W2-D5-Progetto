@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-dark link-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/netflix_logo.png" alt="Netflix logo" height="50px" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My List</a>
+            </li>
+          </ul>
+          <div class="d-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#">KIDS</a>
+              <div class="dropdown">
+                <button
+                  class="btn btn-dark dropdown-toggle"
+                  type="button"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                >
+                  <img src="./assets/avatar.png" alt="" width="40px" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Horror</a></li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex flex-column py-4">
+      <div><h1 class="text-white fs-4 ps-3">Trending Now</h1></div>
+      <div class="container text-center">
+        <div class="row gx-0">
+          <div class="col"><img src="./assets/media/media0.webp" alt="" width="160px" /></div>
+          <div class="col"><img src="./assets/media/media1.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media2.webp" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media3.webp" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media4.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media5.webp" width="160px" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column py-4">
+      <div><h1 class="text-white fs-4 ps-3">Watch It Again</h1></div>
+      <div class="container text-center">
+        <div class="row gx-0">
+          <div class="col"><img src="./assets/media/media12.jpg" alt="" width="160px" /></div>
+          <div class="col"><img src="./assets/media/media13.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media14.webp" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media15.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media4.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media5.webp" width="160px" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column py-4">
+      <div><h1 class="text-white fs-4 ps-3">New Releases</h1></div>
+      <div class="container text-center">
+        <div class="row gx-0">
+          <div class="col"><img src="./assets/media/media6.jpg" alt="" width="160px" /></div>
+          <div class="col"><img src="./assets/media/media7.webp" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media8.webp" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media9.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media10.jpg" width="160px" alt="" /></div>
+          <div class="col"><img src="./assets/media/media11.jpg" width="160px" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex"></footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
