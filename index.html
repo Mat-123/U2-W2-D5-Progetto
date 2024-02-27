@@ -22,7 +22,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
@@ -65,7 +65,7 @@
           </a>
           <div class="dropdown">
             <button
-              class="btn btn-dark dropdown-toggle ms-3"
+              class="btn btn-dark dropdown-toggle ms-3 d-flex align-items-center"
               type="button"
               role="button"
               data-bs-toggle="dropdown"
@@ -73,10 +73,10 @@
             >
               <a class="icon-link" href="profile.html"> <img src="./assets/avatar.png" alt="" width="40px" /></a>
             </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">My Watchlist</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Log out</a></li>
+            <ul class="dropdown-menu show bg-dark">
+              <li><a class="dropdown-item text-white" href="#">My Watchlist</a></li>
+              <li><a class="dropdown-item text-white" href="#">Settings</a></li>
+              <li><a class="dropdown-item text-white" href="#">Log out</a></li>
             </ul>
           </div>
         </div>
@@ -257,6 +257,10 @@
       </div>
     </footer>
 
-    <script src="./node_modules/bootstrap/js/dist/dropdown.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
