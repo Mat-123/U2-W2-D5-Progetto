@@ -4,29 +4,222 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page - Netflix</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="bg-dark">
-    <header class="d-flex m-2">
-      <img src="./assets/netflix_logo.png" height="40px" alt="Netflix Logo" />
-    </header>
-    <main class="container mt-4">
-      <div class="row offset-3 border-bottom border-light-subtle">
-        <div class="col-4">
-          <h1 class="text-light">Edit Profile</h1>
-        </div>
-      </div>
-      <div class="row offset-3">
-        <div class="col-2 mt-3">
-          <img src="./assets/kids_icon.png" alt="Kids" width="120px" />
-          <div class="col-4">
-            <div class="row">
-              <div class="col"></div>
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md text-light">
+          <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="./index.html">
+              <img src="./assets/netflix_logo.png" alt="netflix_logo" width="100px" />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon border border-light py-1">
+                <i class="bi bi-list text-light"></i>
+              </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-itemt">
+                  <a class="nav-link text-light" href="#">Tv Shows</a>
+                </li>
+                <li class="nav-itemt">
+                  <a class="nav-link text-light" href="#">Movies</a>
+                </li>
+                <li class="nav-itemt">
+                  <a class="nav-link text-light" href="#">Recently Added</a>
+                </li>
+                <li class="nav-itemt">
+                  <a class="nav-link text-light" href="#">My List</a>
+                </li>
+              </ul>
+              <form class="d-flex justify-content-center align-items-center" role="search">
+                <input
+                  type="search"
+                  name="searchbar"
+                  placeholder="Search"
+                  class="border border-light bg-dark text-light text-center"
+                />
+                <button type="submit" class="btn btn-outline-none">
+                  <i class="bi bi-search text-light"></i>
+                </button>
+              </form>
+              <div class="mx-2 mb-md-0 mb-sm-3 d-flex justify-content-center align-items-center">KIDS</div>
+
+              <i class="bi bi-bell-fill mx-1 d-flex justify-content-center align-items-center"></i>
             </div>
+
+            <div class="dropdown d-flex ms-3">
+              <button
+                class="btn dropdown-toggle p-0 pe-1"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/avatar.png" alt="avatar" width="30px" class="rounded-circle m-1" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end bg-dark border my-2">
+                <li>
+                  <a class="dropdown-item text-light" href="#">USER</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">SETTINGS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2 class="text-light">Edit Profile</h2>
+        <hr class="bg-secondary" />
+
+        <div class="row justify-content-evenly">
+          <div class="col-md-12 col-lg-4 mb-3">
+            <span class="badge badge-pill position-absolute">
+              <i class="bi bi-pencil"></i>
+            </span>
+            <img src="./assets/avatar.png" alt="profile picture" height="150" />
+          </div>
+
+          <div class="col-md-12 col-lg-8">
+            <form>
+              <h3 class="text-bg-secondary p-2">Strive Student</h3>
+
+              <div class="form-group">
+                <label for="language" class="text-light">Language:</label>
+                <select class="form-control text-light bg-black rounded-0" id="language" name="language">
+                  <option value="English">English</option>
+                  <option value="Chinese">Chinese</option>
+                  <option value="French">French</option>
+                </select>
+              </div>
+              <hr class="bg-secondary" />
+
+              <div class="form-group">
+                <label for="maturity" class="text-light">Maturity Settings:</label>
+                <h6 class="text-bg-secondary p-2">ALL MATURITY RATINGS</h6>
+                <p class="text-light">Show titles of <strong>all maturity ratings</strong> for this profile</p>
+                <select class="form-control text-bg-dark rounded-0" id="maturity" name="maturity">
+                  <option value="Edit">EDIT</option>
+                  <option value="13+">13+</option>
+                  <option value="16+">16+</option>
+                  <option value="18+">18+</option>
+                </select>
+              </div>
+              <hr class="bg-secondary" />
+
+              <div class="form-check">
+                <input class="form-check-input text-bg-dark rounded-0" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label text-light" for="flexCheckDefault">
+                  Autoplay next episode in a series on all devices.
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input text-bg-dark rounded-0"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label text-light" for="flexCheckChecked">
+                  Autoplay previews while browsing on all devices.
+                </label>
+              </div>
+            </form>
+          </div>
+          <hr class="bg-secondary" />
+        </div>
+        <div class="row mt-3 md-flex-column justify-content-md-center justify-content-lg-center gy-2 mb-5">
+          <div class="col-md-12 col-lg-2">
+            <button class="btn btn-light rounded-0">SAVE</button>
+          </div>
+          <div class="col-md-12 col-lg-2">
+            <button class="text-secondary bg-dark btn btn-outline-secondary rounded-0">CANCEL</button>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <button class="text-secondary bg-dark btn btn-outline-secondary rounded-0">DELETE PROFILE</button>
           </div>
         </div>
       </div>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li class="d-inline p-2">
+                <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="d-inline p-2">
+                <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="d-inline p-2">
+                <a href="#" class="text-secondary"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li class="d-inline p-2">
+                <a href="#" class="text-secondary"><i class="bi bi-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-3">
+            <ul class="lh-lg">
+              <li><a href="#" class="text-secondary text-decoration-none">Audio and Subtitles</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Media Center</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Privacy</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <ul class="lh-lg">
+              <li><a href="#" class="text-secondary text-decoration-none">Audio Description</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Investor Relations</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Legal Notices</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <ul class="lh-lg">
+              <li><a href="#" class="text-secondary text-decoration-none">Help Center</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Jobs</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Cookie Preferences</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <ul class="lh-lg">
+              <li><a href="#" class="text-secondary text-decoration-none">Gift Cards</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Terms of Use</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Corporate Information</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row ms-4">
+          <button class="btn bg-dark btn-outline-secondary col-2">Service Code</button>
+          <p class="text-secondary mt-2 col-12">© 1997 - 2019 Netflix, Inc. {i-0d00fcda2fdf9c0de}</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
