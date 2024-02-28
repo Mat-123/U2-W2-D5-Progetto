@@ -77,13 +77,13 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-end bg-dark border my-2">
                 <li>
-                  <a class="dropdown-item text-light dropItem" href="./profile.html">Profile</a>
+                  <a class="dropdown-item text-light listItemDrop" href="./profile.html">Profile</a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-light dropItem" href="#">Settings</a>
+                  <a class="dropdown-item text-light listItemDrop" href="#">Settings</a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-light dropItem" href="#">Logout</a>
+                  <a class="dropdown-item text-light listItemDrop" href="#">Logout</a>
                 </li>
               </ul>
             </div>
@@ -92,47 +92,40 @@
       </div>
     </header>
 
-    <main class="mt-2 mx-4">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-3">
-            <h1 class="text-white">TV Shows</h1>
-          </div>
+    <div class="mt-2 mx-4 d-flex justify-content-between">
+      <div class="d-flex flex-row align-items-center">
+        <h1 class="text-white">TV Shows</h1>
+        <div class="px-3 ms-3 text-light border contenuto">
+          <li class="nav-item dropdown dropdown-menu-end list-unstyled">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Genres</span>
+            </a>
 
-          <div class="col-7">
-            <div class="px-3 text-light border py-1 contenuto">
-              <li class="nav-item dropdown dropdown-menu-end list-unstyled">
-                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span>Genres</span>
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-end bg-dark border my-2">
-                  <li>
-                    <a class="dropdown-item text-light text-center" href="#">Action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-light text-center" href="#">Drama</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-light text-center" href="#">Horror</a>
-                  </li>
-                </ul>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark border my-2">
+              <li>
+                <a class="dropdown-item text-light text-center" href="#">Action</a>
               </li>
-            </div>
-          </div>
-
-          <div class="col-2 d-flex justify-content-end">
-            <a class="myiconbtn border p-1 px-2" role="button">
-              <i class="bi bi-list-columns-reverse text-light"></i>
-            </a>
-
-            <a class="myiconbtn border p-1 px-2" role="button">
-              <i class="bi bi-grid text-light"></i>
-            </a>
-          </div>
+              <li>
+                <a class="dropdown-item text-light text-center" href="#">Drama</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-light text-center" href="#">Horror</a>
+              </li>
+            </ul>
+          </li>
         </div>
       </div>
+      <div>
+        <a class="myiconbtn border p-1 px-2" role="button">
+          <i class="bi bi-list-columns-reverse text-light"></i>
+        </a>
+        <a class="myiconbtn border p-1 px-2" role="button">
+          <i class="bi bi-grid text-light"></i>
+        </a>
+      </div>
+    </div>
 
+    <main class="mt-2 mx-4">
       <div class="text-white container-fluid mt-4">
         <h2 class="mb-3">Trending Now</h2>
       </div>

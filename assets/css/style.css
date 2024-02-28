@@ -1,3 +1,7 @@
 .contenuto {
   width: min-content;
 }
+
+.listItemDrop:hover {
+  color: black !important;
+}
